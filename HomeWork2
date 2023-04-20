@@ -1,0 +1,117 @@
+package Pro;
+
+import java.util.Scanner;
+
+public class HomeWork_2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       /* int sum = 0;
+        for (int i=1;i<=10;i++){
+            sum += i;
+
+        }
+
+        System.out.println("Sum "+sum);*/
+
+        //=================================================
+
+        /*System.out.println("Enter number");
+        int n= scanner.nextInt();
+         int sum = 0;
+        for (int i=1;i<=n;i++){
+            sum += i;
+
+        }
+
+        System.out.println("Sum "+sum);*/
+
+        ///===================================================
+
+       /* System.out.println("Enter number");
+        int n1 = scanner.nextInt();
+        for (int i = 1; i <= n1; i++) {
+            System.out.println(i+":"+Math.pow(i,3));
+        }*/
+
+
+        //=============================================================
+
+       /* multiplication(scanner);*/
+
+
+
+        //================================================================
+
+       /* sumOddNumber();*/
+
+
+        //================================================================
+       /* for (int i = 1; i <= 5; i++) {
+
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i);
+            }
+            System.out.println();
+        }*/
+
+
+        //==================================================================
+
+        /*System.out.println("enter the number");
+        int n = scanner.nextInt();
+        int sum=1;
+        for (int i = 1; i <= n; i++) {
+            sum *= i;
+        }
+        System.out.println(sum);*/
+
+        //====================================================================
+
+
+      /*  ervers(scanner);*/
+
+        //===========================================================================
+
+        
+
+
+
+
+    }
+
+    public static void ervers(Scanner scanner){
+
+         int numbers[] = new int[5];
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("Enter number ["+(i+1)+"]");
+            numbers[i]= scanner.nextInt();
+        }
+
+        for (int i = numbers.length - 1; i >= 0; i--) {
+            System.out.print(numbers[i]+" ");
+        }
+    }
+
+    public static void sumOddNumber() {
+        int sum=0;
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 == 1) {
+                System.out.println(i);
+                sum += i;
+            }
+        }
+        System.out.println("the sum Is :"+sum);
+    }
+
+
+    public static void multiplication(Scanner scanner){
+        System.out.println("Enter number");
+        int n= scanner.nextInt();
+        for (int i = 1; i <= n; i++) {
+            System.out.println(1+"x"+i+"="+(i*1));
+        }
+
+    }
+
+}
